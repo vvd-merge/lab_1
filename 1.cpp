@@ -17,7 +17,7 @@ int main() {
                 std::cin.ignore(10000, '\n');
                 a = -1;
             }
-        } while (a <= 0);
+        } while (a <= 0); // повторять, пока не введено положительное число
         return a;
         };
 
@@ -27,6 +27,7 @@ int main() {
     d = input("Right side");    // правая боковая сторона
     h = input("Height");        // высота
 
+    // вывод: периметр, площадь, длина средней линии
     std::cout << "Perimeter = " << a + b + c + d << "\n"
         << "Area = " << ((a + b) / 2) * h << "\n"
         << "Midline length = " << (a + b) / 2 << std::endl;
