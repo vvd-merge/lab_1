@@ -5,7 +5,6 @@ int main() {
 
     double a, b, c, d, h;
 
-    //функция для ввода положительного числа с проверкой на ошибки
     auto input = [](const char* trapezoid) {
         double a;
         do {
@@ -17,7 +16,7 @@ int main() {
                 std::cin.ignore(10000, '\n');
                 a = -1;
             }
-        } while (a <= 0); // повторять, пока не введено положительное число
+        } while (a <= 0); 
         return a;
         };
 
@@ -27,7 +26,7 @@ int main() {
     d = input("Right side");    // правая боковая сторона
     h = input("Height");        // высота
 
-    // вывод: периметр, площадь, длина средней линии
+    // вывод
     std::cout << "Perimeter = " << a + b + c + d << "\n"
         << "Area = " << ((a + b) / 2) * h << "\n"
         << "Midline length = " << (a + b) / 2 << std::endl;
